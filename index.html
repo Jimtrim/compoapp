@@ -9,17 +9,36 @@
 </head>
 
 <body>
-	<div data-role="page">
+	<!-- Home page -->
+	<div data-role="page" id="home">
 
 		<div data-role="header">
-			<h1>Page Title</h1>
+			<h1>Home</h1>
 		</div>
 		<div data-role="header">
 			<h1>Upcoming menu</h1>
 		</div>
 
 		<div data-role="content">	
-			<p>Page content goes here.</p>		
+			<p>Page content goes here.</p>
+			<p>Let's try a link to description: <a href="#description" data-role="button">Description</a> </p>		
+		</div>
+
+	</div>
+	
+	<!-- Description -->
+	<div data-role="page" id="description">
+
+		<div data-role="header">
+			<h1>Description</h1>
+		</div>
+		<div data-role="header">
+			<h1>Upcoming menu</h1>
+		</div>
+
+		<div data-role="content">	
+			<p>Page content goes here.</p>
+			<p>Let's go back home: <a href="#home" data-role="button" data-direction="reverse">Home</a> </p>		
 		</div>
 
 	</div>
