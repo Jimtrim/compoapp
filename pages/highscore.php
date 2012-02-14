@@ -1,7 +1,8 @@
 <?
 function generate_score_elements() {
 	// Nicks som skal brukes
-	$users = array(/*'Dagga', 'Krill', 'tmn', 'Melwil', 'Sandsmark',*/'Jonta','Jimtrim','AlfSimen','KinkyPinkie','DukeJarlsberg','ExuZ','Frikish');
+	$me = 'Jimtrim';
+	$users = array(/*'Dagga', 'Melwil', 'Sandsmark',*/'tmn', 'krill', 'Jonta', $me ,'AlfSimen','KinkyPinkie','DukeJarlsberg','ExuZ','Frikish');
 	$errorCount = 0;
 	$failUsers = array();
 
@@ -12,6 +13,9 @@ function generate_score_elements() {
 		$users[$num] = array(intval(str_replace("Solved ", "", $listen[3])), $listen[0]);
 	}
 	sort($users);
+	$top = $users[(count($users)-1)][1];
+	
+	echo('<li data-role="list-divider">'. ($top==$me ? 'Og selvsagt er jeg øverst =)' : $top.', Y U OVER '.$me.'?!?!') .'</li>'); 
 	
 	// Utskrift
 	for ($num=count($users)-1; $num>=0; $num--) {
@@ -20,6 +24,7 @@ function generate_score_elements() {
 			' Solved</span><div style="clear:both;"></span></li>';
 		}
 	}
+	echo('<li data-theme="a">Sucks to be last, '.$users[0][1].'</li>'); 
 	echo '</table>';
 }
 ?>
@@ -29,9 +34,12 @@ function generate_score_elements() {
 
 	<? showHeader('High Score'); ?>
 	
-	<div data-role="content">	
+	<div data-role="content">
 		<h2>Project Euler</h2>
-		<ul data-role="listview" data-theme="b">
+		<p>For de som ikke vet det, er <a href="http://www.projecteuler.net" target="blank">www.projecteuler.net</a> et 
+		nettsted som forsyner folk med prorgrammeringsproblemer. Dette er en rangeringsliste for de jeg kjenner, og kanskje er på dette kurset. 
+		</p>
+		<ul data-role="listview" style="margin-top:10px;">
 			<? generate_score_elements(); ?>
 		</ul>	
 	</div>		
