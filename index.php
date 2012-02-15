@@ -17,9 +17,20 @@
 </head>
 
 <?php
-function showHeader($title = "Hjem") { ?>
-  <div data-role="header" data-position="fixed">
+function showHeader($title = "Hjem", $active= null) { ?>
+	<div data-role="header">
 		<h1><?= ($title == "Hjem" ? "Jim Frode Hoff" : $title) ?></h1>	
+		<div data-role="footer" data-position="fixed">
+		  <div data-role="navbar">
+			<ul>
+			  <li><a href="#home" data-icon="home" data-role="button" <?php if ("home" == $active) { echo ' class="ui-btn-active ui-state-persist"'; }
+			  											else { echo' data-direction="reverse"'; } ?>>Hjem</a></li>
+			  <li><a href="#description" data-icon="info" data-role="" <?php if ("description" == $active) { echo ' class="ui-btn-active ui-state-persist"'; }
+			  											else if ("highscore" == $active) { echo' data-direction="reverse"'; } ?>>Beskrivelse</a></li>
+			  <li><a href="#highscore" data-icon="star" <?php if ("highscore" == $active) { echo 'class="ui-btn-active ui-state-persist"'; }?>>High Score</a></li>
+			</ul>
+		  </div>
+		</div>
 	</div><?
 }
 

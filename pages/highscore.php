@@ -32,7 +32,7 @@ function generate_score_elements() {
 <!-- High-score page -->
 <div data-role="page" id="highscore">
 
-	<? showHeader('High Score'); ?>
+	<? showHeader('High Score','highscore'); ?>
 	
 	<div data-role="content">
 		<h2>Project Euler</h2>
@@ -44,5 +44,5 @@ function generate_score_elements() {
 		</ul>	
 	</div>		
 	
-	<? showMenu('highscore') ?>
+	<?// showMenu('highscore') ?>
 </div>

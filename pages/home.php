@@ -1,7 +1,7 @@
 <!-- Home page -->
 <div data-role="page" id="home">
 
-		<? showHeader('Hjem'); ?>
+		<? showHeader('Hjem','home'); ?>
 		
 	<div data-role="content">	
 	    <h1>Heihei, hallo!</h1>
@@ -15,21 +15,23 @@
 	     <a href="#home_popup" data-rel="dialog" data-role="button">Knapp</a> </p>		
     </div>
 		
-		<? showMenu('home') ?>
+		<? //showMenu('home') ?>
 </div>
 
 
 <!-- Home popup -->
 <div data-role="page" id="home_popup">
 
-		<? showHeader('Knapper er gøy'); ?>
+	<div data-role="header">
+		<h1>Knapper er awesome!</h1>
+	</div>
 
-		<div data-role="content" data-theme="c">
-			<h1>Liker du knapper?</h1>
-			<p>Dette burde jo være et enkelt spørsmål, siden du ikke kunne motstå den første knappen</p>
-			<a href="lols.html" data-role="button" data-rel="back" data-theme="b">JA! Elsker dem!</a>       
-			<a href="lols.html" data-role="button" data-rel="back" data-theme="c">Nei, jeg trykte for å trolle</a>    
-		</div>
+	<div data-role="content" data-theme="c">
+		<h1>Liker du knapper?</h1>
+		<p>Dette burde jo være et enkelt spørsmål, siden du ikke kunne motstå den første knappen</p>
+		<a href="lols.html" data-role="button" data-rel="back" data-theme="b">JA! Elsker dem!</a>       
+		<a href="lols.html" data-role="button" data-rel="back" data-theme="c">Nei, jeg trykte for å trolle</a>    
+	</div>
 </div>
 
 

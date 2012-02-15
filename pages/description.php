@@ -1,7 +1,7 @@
 <!-- Description page -->
 <div data-role="page" id="description">
 
-	<? showHeader('Beskrivelse'); ?>
+	<? showHeader('Beskrivelse', 'description'); ?>
 	
 	<div data-role="content">	
 		<h1>Hvem er Jim Frode?</h1>
@@ -33,7 +33,7 @@
 		</div>		
 	</div>		
 	
-	<? showMenu('description') ?>
+	<?// showMenu('description') ?>
 </div>
 
 
@@ -41,24 +41,22 @@
 
 <div data-role="page" id="description_popup">
 
-	<? showHeader('Popup\'s er kult'); ?>
+	<div data-role="header">
+		<h1>Pop'ups er kult</h1>
+	</div>
 	<div data-role="content">	
-		<div class="ui-grid-a">
-			<div class="ui-block-a" style="margin:0 10px 0 -10px;">
-				<img src="res/old_fotograf.jpg">
-			</div>
-			<div class="ui-block-b">
-				<p>Dette er en veldig fin paragaraf, som beskriver den tidligere fotografen Jim Frode Hoff</p>
-				<p>Jim Frode Hoff var, kort oppsummert, en fantastisk fotograf. Hans egenskaper greide å gi han jobber for 
-				  blant annet: 
-				  <ul data-role="listview" data-inset="true">
-				   	<li>Trønder-Avisa</li>
-				   	<li>Ungdommens Kulturmønstring</li>
-				   	<li>NRK</li>
-				  </ul>
-				  True story, bro!
-				</p>
-			</div>	   
+		<div>
+			<img src="res/old_fotograf.jpg">
+			<p>Dette er en veldig fin paragaraf, som beskriver den tidligere fotografen Jim Frode Hoff</p>
+			<p>Jim Frode Hoff var, kort oppsummert, en fantastisk fotograf. Hans egenskaper greide å gi han jobber for 
+			  blant annet: 
+			  <ul data-role="listview" data-inset="true">
+			   	<li>Trønder-Avisa</li>
+			   	<li>Ungdommens Kulturmønstring</li>
+			   	<li>NRK</li>
+			  </ul>
+			  True story, bro!
+			</p>
 		</div>
 	</div>		
 	
