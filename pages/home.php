@@ -12,7 +12,7 @@
 	     <p>Om som en siste bit av introduksjonen: ikke ta noe av det som står på siden alt for alvorlig.</p>
 	     <div style="clear:both;"></div>
 	     
-	     <a href="#home_popup" data-rel="dialog" data-role="button">Knapp</a> </p>		
+	     <a href="#home_popup" data-rel="dialog" data-role="button">Katt?</a> </p>		
     </div>
 		
 		<? //showMenu('home') ?>
@@ -23,14 +23,15 @@
 <div data-role="page" id="home_popup">
 
 	<div data-role="header">
-		<h1>Knapper er awesome!</h1>
+		<h1>KATT!!</h1>
 	</div>
 
 	<div data-role="content" data-theme="c">
-		<h1>Liker du knapper?</h1>
-		<p>Dette burde jo være et enkelt spørsmål, siden du ikke kunne motstå den første knappen</p>
-		<a href="lols.html" data-role="button" data-rel="back" data-theme="b">JA! Elsker dem!</a>       
-		<a href="lols.html" data-role="button" data-rel="back" data-theme="c">Nei, jeg trykte for å trolle</a>    
+		<h1>Liker du katter?</h1>
+		<img src="res/haters.png" style="width: 100%; min-width: 100px;">
+		<p>Eller er du kanskje en hater?</p>
+		<a href="lols.html" data-role="button" data-rel="back" data-theme="b">Aww!</a>       
+		<a href="lols.html" data-role="button" data-rel="back" data-theme="c">Haters gonna hate</a>    
 	</div>
 </div>
 
